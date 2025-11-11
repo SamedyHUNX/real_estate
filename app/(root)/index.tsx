@@ -11,7 +11,7 @@ export default function Index() {
       }}
     >
       <Text className="font-bold my-10 font-rubik text-3xl">
-        Welcome to RealEstateHub
+        Welcome to EstateHub
       </Text>
       <Link href="/sign-in">Sign In</Link>
       <Link href="/explore">Explore</Link>
