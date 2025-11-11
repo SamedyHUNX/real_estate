@@ -1,50 +1,217 @@
-# Welcome to your Expo app 👋
+# Real Estate App - React Native Seed Project
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern React Native seed project built with **Expo Router** and **NativeWind** (Tailwind CSS for React Native). Perfect for quickly bootstrapping mobile applications with a beautiful, utility-first styling approach.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- ⚡️ **Expo SDK 54** - Latest Expo framework for streamlined development
+- 🎨 **NativeWind v4** - Tailwind CSS styling for React Native
+- 🧭 **Expo Router** - File-based routing with native navigation
+- 📱 **Cross-platform** - iOS, Android, and Web support
+- 🎯 **TypeScript** - Full type safety out of the box
+- 🔄 **React 19** - Latest React features
+- 🏗️ **New Architecture** - Enabled for optimal performance
+- ⚡️ **React Compiler** - Experimental optimizations enabled
 
-   ```bash
-   npm install
-   ```
+## 📋 Prerequisites
 
-2. Start the app
+Before you begin, ensure you have the following installed:
 
-   ```bash
-   npx expo start
-   ```
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- For iOS development: [Xcode](https://developer.apple.com/xcode/)
+- For Android development: [Android Studio](https://developer.android.com/studio)
 
-In the output, you'll find options to open the app in a
+## 🛠️ Installation
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd real-estate
+```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Get a fresh project
+## 🎯 Getting Started
 
-When you're ready, run:
+### Start the development server:
+```bash
+npm start
+```
 
+### Run on specific platforms:
+
+**iOS:**
+```bash
+npm run ios
+```
+
+**Android:**
+```bash
+npm run android
+```
+
+**Web:**
+```bash
+npm run web
+```
+
+### Scan QR code:
+After running `npm start`, scan the QR code with:
+- **iOS:** Camera app or Expo Go
+- **Android:** Expo Go app
+
+## 🎨 Styling with NativeWind
+
+This project uses NativeWind v4, which brings Tailwind CSS to React Native. Style your components using familiar Tailwind utility classes:
+
+```tsx
+import { View, Text } from 'react-native';
+
+export default function MyComponent() {
+  return (
+    <View className="flex-1 items-center justify-center bg-blue-500">
+      <Text className="text-white text-2xl font-bold">
+        Hello NativeWind!
+      </Text>
+    </View>
+  );
+}
+```
+
+### Global Styles
+Global CSS is configured in `app/globals.css` and imported in your root layout.
+
+### Tailwind Configuration
+Customize your theme in `tailwind.config.js` to add custom colors, fonts, spacing, and more.
+
+## 📁 Project Structure
+
+```
+real-estate/
+├── app/                    # File-based routing (Expo Router)
+│   ├── _layout.tsx        # Root layout component
+│   ├── index.tsx          # Home screen
+│   └── globals.css        # Global styles
+├── assets/                # Images, fonts, and other static files
+├── node_modules/          # Dependencies
+├── app.json              # Expo configuration
+├── tailwind.config.js    # Tailwind CSS configuration
+├── tsconfig.json         # TypeScript configuration
+├── babel.config.js       # Babel configuration
+└── package.json          # Project dependencies and scripts
+```
+
+## 📦 Key Dependencies
+
+### Core:
+- `expo` - Expo framework
+- `react-native` - React Native framework
+- `expo-router` - File-based routing
+
+### Styling:
+- `nativewind` - Tailwind CSS for React Native
+
+### Navigation:
+- `@react-navigation/native` - Navigation library
+- `react-native-screens` - Native screen primitives
+- `react-native-gesture-handler` - Touch gesture system
+
+### UI Components:
+- `@expo/vector-icons` - Icon library
+- `expo-image` - Optimized image component
+
+## 🔧 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm start` | Start the Expo development server |
+| `npm run android` | Run on Android emulator/device |
+| `npm run ios` | Run on iOS simulator/device |
+| `npm run web` | Run in web browser |
+| `npm run lint` | Run ESLint to check code quality |
+
+## 🏗️ Building for Production
+
+### Android (APK/AAB):
+```bash
+eas build --platform android
+```
+
+### iOS (IPA):
+```bash
+eas build --platform ios
+```
+
+> **Note:** You'll need to set up [EAS Build](https://docs.expo.dev/build/introduction/) first.
+
+## 🎯 Features & Configuration
+
+### Dark Mode Support
+The app supports automatic dark mode based on system preferences. Configure in `app.json`:
+```json
+"userInterfaceStyle": "automatic"
+```
+
+### New Architecture
+React Native's new architecture is enabled for better performance:
+```json
+"newArchEnabled": true
+```
+
+### Typed Routes
+TypeScript typed routes are enabled for type-safe navigation:
+```json
+"experiments": {
+  "typedRoutes": true
+}
+```
+
+## 🐛 Troubleshooting
+
+### Clear cache and restart:
+```bash
+npm start -- --clear
+```
+
+### Reset project:
 ```bash
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Rebuild node_modules:
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
 
-## Learn more
+## 📚 Learn More
 
-To learn more about developing your project with Expo, look at the following resources:
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Documentation](https://reactnative.dev/)
+- [NativeWind Documentation](https://www.nativewind.dev/)
+- [Expo Router Documentation](https://expo.github.io/router/docs/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🤝 Contributing
 
-## Join the community
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Join our community of developers creating universal apps.
+## 📄 License
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is open source and available under the [MIT License](LICENSE).
+
+## 💡 Tips
+
+- Use `className` prop (not `style`) for NativeWind styling
+- Combine NativeWind classes with inline styles when needed
+- Utilize Expo's hot reloading for rapid development
+- Check out the [NativeWind playground](https://www.nativewind.dev/playground) for testing styles
+
+---
+
+Built with ❤️ using React Native, Expo, and NativeWind
