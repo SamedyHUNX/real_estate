@@ -1,5 +1,4 @@
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 
 export default function Index() {
   return (
@@ -9,13 +8,6 @@ export default function Index() {
         justifyContent: "center",
         alignItems: "center",
       }}
-    >
-      <Text className="font-bold my-10 font-rubik text-3xl">
-        Welcome to JobXHub
-      </Text>
-      <Link href="/sign-in">Sign In</Link>
-      <Link href="/explore">Explore</Link>
-      <Link href="/profile">Profile</Link>
-    </View>
+    />
   );
 }
