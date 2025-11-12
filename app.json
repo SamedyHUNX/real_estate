@@ -7,10 +7,13 @@
     "icon": "./assets/images/icon.png",
     "scheme": "realestate",
     "userInterfaceStyle": "automatic",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.real-estate"
     },
     "android": {
       "adaptiveIcon": {
