@@ -26,19 +26,35 @@ Before you begin, ensure you have the following installed:
 ## 🛠️ Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd real-estate
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
+```
+
+3. Set up environment variable:
+
+```bash
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=
+EXPO_PUBLIC_APPWRITE_PROJECT_NAME=
+EXPO_PUBLIC_APPWRITE_ENDPOINT=
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=
+EXPO_PUBLIC_APPWRITE_AGENTS_TABLE_ID=
+EXPO_PUBLIC_APPWRITE_GALLERIES_TABLE_ID=
+EXPO_PUBLIC_APPWRITE_REVIEWS_TABLE_ID=
+EXPO_PUBLIC_APPWRITE_PROPERTIES_TABLE_ID=
 ```
 
 ## 🎯 Getting Started
 
 ### Start the development server:
+
 ```bash
 npm start
 ```
@@ -46,22 +62,27 @@ npm start
 ### Run on specific platforms:
 
 **iOS:**
+
 ```bash
 npm run ios
 ```
 
 **Android:**
+
 ```bash
 npm run android
 ```
 
 **Web:**
+
 ```bash
 npm run web
 ```
 
 ### Scan QR code:
+
 After running `npm start`, scan the QR code with:
+
 - **iOS:** Camera app or Expo Go
 - **Android:** Expo Go app
 
@@ -70,23 +91,23 @@ After running `npm start`, scan the QR code with:
 This project uses NativeWind v4, which brings Tailwind CSS to React Native. Style your components using familiar Tailwind utility classes:
 
 ```tsx
-import { View, Text } from 'react-native';
+import { View, Text } from "react-native";
 
 export default function MyComponent() {
   return (
     <View className="flex-1 items-center justify-center bg-blue-500">
-      <Text className="text-white text-2xl font-bold">
-        Hello NativeWind!
-      </Text>
+      <Text className="text-white text-2xl font-bold">Hello NativeWind!</Text>
     </View>
   );
 }
 ```
 
 ### Global Styles
+
 Global CSS is configured in `app/globals.css` and imported in your root layout.
 
 ### Tailwind Configuration
+
 Customize your theme in `tailwind.config.js` to add custom colors, fonts, spacing, and more.
 
 ## 📁 Project Structure
@@ -109,40 +130,46 @@ real-estate/
 ## 📦 Key Dependencies
 
 ### Core:
+
 - `expo` - Expo framework
 - `react-native` - React Native framework
 - `expo-router` - File-based routing
 
 ### Styling:
+
 - `nativewind` - Tailwind CSS for React Native
 
 ### Navigation:
+
 - `@react-navigation/native` - Navigation library
 - `react-native-screens` - Native screen primitives
 - `react-native-gesture-handler` - Touch gesture system
 
 ### UI Components:
+
 - `@expo/vector-icons` - Icon library
 - `expo-image` - Optimized image component
 
 ## 🔧 Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm start` | Start the Expo development server |
-| `npm run android` | Run on Android emulator/device |
-| `npm run ios` | Run on iOS simulator/device |
-| `npm run web` | Run in web browser |
-| `npm run lint` | Run ESLint to check code quality |
+| Command           | Description                       |
+| ----------------- | --------------------------------- |
+| `npm start`       | Start the Expo development server |
+| `npm run android` | Run on Android emulator/device    |
+| `npm run ios`     | Run on iOS simulator/device       |
+| `npm run web`     | Run in web browser                |
+| `npm run lint`    | Run ESLint to check code quality  |
 
 ## 🏗️ Building for Production
 
 ### Android (APK/AAB):
+
 ```bash
 eas build --platform android
 ```
 
 ### iOS (IPA):
+
 ```bash
 eas build --platform ios
 ```
@@ -152,19 +179,25 @@ eas build --platform ios
 ## 🎯 Features & Configuration
 
 ### Dark Mode Support
+
 The app supports automatic dark mode based on system preferences. Configure in `app.json`:
+
 ```json
 "userInterfaceStyle": "automatic"
 ```
 
 ### New Architecture
+
 React Native's new architecture is enabled for better performance:
+
 ```json
 "newArchEnabled": true
 ```
 
 ### Typed Routes
+
 TypeScript typed routes are enabled for type-safe navigation:
+
 ```json
 "experiments": {
   "typedRoutes": true
@@ -174,16 +207,19 @@ TypeScript typed routes are enabled for type-safe navigation:
 ## 🐛 Troubleshooting
 
 ### Clear cache and restart:
+
 ```bash
 npm start -- --clear
 ```
 
 ### Reset project:
+
 ```bash
 npm run reset-project
 ```
 
 ### Rebuild node_modules:
+
 ```bash
 rm -rf node_modules package-lock.json
 npm install
