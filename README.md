@@ -16,6 +16,11 @@ A modern Real Estate application built with **Expo Router**, **NativeWind** (Tai
 - 🔄 **React 19** - Latest React features
 - 🏗️ **New Architecture** - Enabled for optimal performance
 - ⚡️ **React Compiler** - Experimental optimizations enabled
+ 
+## 🎨 Resources
+ 
+- [**Figma Design**](https://www.figma.com/design/Bing8SWFQ9Tjea9Fmj7mxL/EstateHub?node-id=0-1&t=RVGyIvPbyCwmevx2-1) - UI/UX Design
+- [**Database Schema**](https://lucid.app/lucidchart/74932b7f-451d-4d61-ac28-0e536b6dacd4/edit?invitationId=inv_a8b16f68-c507-4ea1-9e49-fe9a26eb7c23&page=0_0#) - LucidChart Diagram
 
 ## 📋 Prerequisites
 
@@ -123,6 +128,7 @@ real-estate/
 │   ├── index.tsx          # Home screen
 │   └── globals.css        # Global styles
 ├── assets/                # Images, fonts, and other static files
+├── models/                # Appwrite database types & schemas
 ├── node_modules/          # Dependencies
 ├── app.json              # Expo configuration
 ├── tailwind.config.js    # Tailwind CSS configuration
@@ -130,6 +136,15 @@ real-estate/
 ├── babel.config.js       # Babel configuration
 └── package.json          # Project dependencies and scripts
 ```
+ 
+### Database Models
+
+The `models/` directory contains TypeScript interfaces for the Appwrite database collections:
+
+- `Agents` - Real estate agents
+- `Galleries` - Property image galleries
+- `Properties` - Real estate listings
+- `Reviews` - User reviews for agents/properties
 
 ## 📦 Key Dependencies
 
