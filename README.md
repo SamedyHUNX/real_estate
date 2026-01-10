@@ -32,7 +32,7 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/SamedyHUNX/EstateHub>
 cd real-estate
 ```
 
@@ -156,13 +156,13 @@ real-estate/
 
 ## 🔧 Available Scripts
 
-| Command                  | Description                       |
-| ------------------------ | --------------------------------- |
-| `npx expo start`         | Start the Expo development server |
-| `npx expo run:android`   | Run on Android emulator/device    |
-| `npx expo run:ios`       | Run on iOS simulator/device       |
-| `npx expo start --web`   | Run in web browser                |
-| `npx expo lint`          | Run ESLint to check code quality  |
+| Command                | Description                       |
+| ---------------------- | --------------------------------- |
+| `npx expo start`       | Start the Expo development server |
+| `npx expo run:android` | Run on Android emulator/device    |
+| `npx expo run:ios`     | Run on iOS simulator/device       |
+| `npx expo start --web` | Run in web browser                |
+| `npx expo lint`        | Run ESLint to check code quality  |
 
 ## 🏗️ Building for Production
 
