@@ -1,5 +1,7 @@
 # EstateHub
 
+![EstateHub localtion](./assets/readme/thumbnail.webp)
+
 ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37) ![NativeWind](https://img.shields.io/badge/NativeWind-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Appwrite](https://img.shields.io/badge/Appwrite-FD366E?style=for-the-badge&logo=appwrite&logoColor=white)
 
 A modern Real Estate application built with **Expo Router**, **NativeWind** (Tailwind CSS for React Native), and **Appwrite**. Perfect for quickly bootstrapping mobile applications with a beautiful, utility-first styling approach.
