@@ -1,6 +1,7 @@
 import { HeaderImage } from "@/components/HeaderImage";
 import { getPropertyById } from "@/lib/appwrite";
 import { useAppwrite } from "@/lib/useAppwrite";
+import { Facility } from "@/types";
 import { Ionicons } from "@expo/vector-icons";
 import { useLocalSearchParams } from "expo-router";
 import {
@@ -12,48 +13,9 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { Models } from "react-native-appwrite";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const { width } = Dimensions.get("window");
-
-type Agent = {
-  name: string;
-  title: string;
-  avatar: string;
-};
-
-type Facility = {
-  icon: string;
-  label: string;
-};
-
-type Review = {
-  id: number;
-  name: string;
-  avatar: string;
-  rating: number;
-  comment: string;
-  date: string;
-};
-
-interface Property extends Models.DefaultDocument {
-  name: string;
-  address: string;
-  image: string;
-  price: number;
-  bedrooms: number;
-  bathrooms: number;
-  area: number;
-  description: string;
-  facilities: Facility[];
-  rating: number;
-  type: string;
-  geolocation: string;
-  agent: Agent;
-  gallery: string[];
-  reviews: Review[];
-}
 
 const facilityIcons = {
   "Car-parking": "car",

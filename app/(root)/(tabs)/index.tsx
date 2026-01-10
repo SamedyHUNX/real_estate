@@ -1,4 +1,4 @@
-import { Card, CardData, FeaturedCard } from "@/components/Cards";
+import { Card, FeaturedCard } from "@/components/Cards";
 import { Filters } from "@/components/Filters";
 import { NoResult } from "@/components/NoResults";
 import { Search } from "@/components/Search";
@@ -6,6 +6,7 @@ import icons from "@/constants/icons";
 import { getLatestProperties, getProperties } from "@/lib/appwrite";
 import { useGlobalContext } from "@/lib/global-provider";
 import { useAppwrite } from "@/lib/useAppwrite";
+import { CardData } from "@/types";
 import { router, useLocalSearchParams } from "expo-router";
 import { useEffect } from "react";
 import {

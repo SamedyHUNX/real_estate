@@ -1,12 +1,14 @@
-# Real Estate App - React Native Seed Project
+# EstateHub
 
-A modern React Native seed project built with **Expo Router** and **NativeWind** (Tailwind CSS for React Native). Perfect for quickly bootstrapping mobile applications with a beautiful, utility-first styling approach.
+![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37) ![NativeWind](https://img.shields.io/badge/NativeWind-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Appwrite](https://img.shields.io/badge/Appwrite-FD366E?style=for-the-badge&logo=appwrite&logoColor=white)
+
+A modern Real Estate application built with **Expo Router**, **NativeWind** (Tailwind CSS for React Native), and **Appwrite**. Perfect for quickly bootstrapping mobile applications with a beautiful, utility-first styling approach.
 
 ## 🚀 Features
 
 - ⚡️ **Expo SDK 54** - Latest Expo framework for streamlined development
 - 🎨 **NativeWind v4** - Tailwind CSS styling for React Native
-- 🧭 **Expo Router** - File-based routing with native navigation
+- compass **Expo Router** - File-based routing with native navigation
 - 📱 **Cross-platform** - iOS, Android, and Web support
 - 🎯 **TypeScript** - Full type safety out of the box
 - 🔄 **React 19** - Latest React features
@@ -56,7 +58,7 @@ EXPO_PUBLIC_APPWRITE_PROPERTIES_TABLE_ID=
 ### Start the development server:
 
 ```bash
-npm start
+npx expo start
 ```
 
 ### Run on specific platforms:
@@ -64,24 +66,24 @@ npm start
 **iOS:**
 
 ```bash
-npm run ios
+npx expo run:ios
 ```
 
 **Android:**
 
 ```bash
-npm run android
+npx expo run:android
 ```
 
 **Web:**
 
 ```bash
-npm run web
+npx expo start --web
 ```
 
 ### Scan QR code:
 
-After running `npm start`, scan the QR code with:
+After running `npx expo start`, scan the QR code with:
 
 - **iOS:** Camera app or Expo Go
 - **Android:** Expo Go app
@@ -152,13 +154,13 @@ real-estate/
 
 ## 🔧 Available Scripts
 
-| Command           | Description                       |
-| ----------------- | --------------------------------- |
-| `npm start`       | Start the Expo development server |
-| `npm run android` | Run on Android emulator/device    |
-| `npm run ios`     | Run on iOS simulator/device       |
-| `npm run web`     | Run in web browser                |
-| `npm run lint`    | Run ESLint to check code quality  |
+| Command                  | Description                       |
+| ------------------------ | --------------------------------- |
+| `npx expo start`         | Start the Expo development server |
+| `npx expo run:android`   | Run on Android emulator/device    |
+| `npx expo run:ios`       | Run on iOS simulator/device       |
+| `npx expo start --web`   | Run in web browser                |
+| `npx expo lint`          | Run ESLint to check code quality  |
 
 ## 🏗️ Building for Production
 
@@ -209,7 +211,7 @@ TypeScript typed routes are enabled for type-safe navigation:
 ### Clear cache and restart:
 
 ```bash
-npm start -- --clear
+npx expo start -c
 ```
 
 ### Reset project:

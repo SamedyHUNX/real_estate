@@ -1,25 +1,12 @@
 import icons from "@/constants/icons";
 import images from "@/constants/images";
+import { CardProps } from "@/types";
 import { Image, Text, TouchableOpacity, View } from "react-native";
-import { Models } from "react-native-appwrite";
-
-export interface CardData extends Models.DefaultDocument {
-  image: string;
-  rating: number;
-  name: string;
-  address: string;
-  price: string;
-}
-
-interface Props {
-  item: CardData;
-  onPress?: () => void;
-}
 
 export const FeaturedCard = ({
   item: { image, rating, name, address, price },
   onPress,
-}: Props) => {
+}: CardProps) => {
   return (
     <TouchableOpacity
       onPress={onPress}
@@ -60,7 +47,7 @@ export const FeaturedCard = ({
 export const Card = ({
   item: { image, rating, name, address, price },
   onPress,
-}: Props) => {
+}: CardProps) => {
   return (
     <TouchableOpacity
       onPress={onPress}

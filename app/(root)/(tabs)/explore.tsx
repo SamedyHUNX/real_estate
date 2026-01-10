@@ -1,10 +1,11 @@
-import { Card, CardData } from "@/components/Cards";
+import { Card } from "@/components/Cards";
 import { Filters } from "@/components/Filters";
 import { NoResult } from "@/components/NoResults";
 import { Search } from "@/components/Search";
 import icons from "@/constants/icons";
 import { getProperties } from "@/lib/appwrite";
 import { useAppwrite } from "@/lib/useAppwrite";
+import { CardData } from "@/types";
 import { router, useLocalSearchParams } from "expo-router";
 import { useEffect } from "react";
 import {

@@ -53,7 +53,7 @@ export default function TabsLayout() {
           title: "Home",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon icon={icons.home} focused={focused} title={"Home"} />
+            <TabIcon icon={icons.home} focused={focused} title={"Explore"} />
           ),
         }}
       />
